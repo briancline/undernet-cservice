@@ -1,0 +1,5 @@
+SYNTAX: clearmode [channel]
+
+clearmode clears all the channel modes. This
+is useful when your channel is locked so you can't even
+join the channel.

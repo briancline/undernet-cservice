@@ -1,0 +1,8 @@
+SYNTAX: op [channel] <nick1> [nick2] [nick3] [...]
+        deop [channel] <nick1> [nick2] [nick3] [...]
+
+op and deop respectively give and remove channel operator
+priviledges to the specified users.
+
+Note that this command is disabled when the channel is in NoOp
+mode (SEE help set for more information).

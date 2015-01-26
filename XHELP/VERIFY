@@ -1,0 +1,7 @@
+SYNTAX: verify <nick>
+
+This command will tell you whether nick is an authenticated
+CSERVICE representative.
+
+A CSERVICE representative is capable of helping you solve problems
+you may have with the channel service.

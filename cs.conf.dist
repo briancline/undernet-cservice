@@ -1,0 +1,62 @@
+# $Id: cs.conf.dist,v 1.5 1998/01/22 09:33:38 chaos Exp $
+# Channel Service Runtime Configuration File
+#
+# Identity
+#
+NICKNAME X
+USERNAME cservice
+HOSTNAME undernet.org
+REALNAME For help type: /msg X help
+UMODE +kid
+#
+# Server to which X connects
+#
+UPLINK cheetah
+PORT 6667
+#
+# How X introduces itself
+#
+SERVERNAME channels.undernet.org
+SERVERINFO Undernet Channel Service
+PASSWORD pizza
+#
+# Files and directories
+#
+HOMEDIR /home/seks/CS
+#UMASK
+EXEC ./cs
+MOTD cs.motd
+LOG cs.log
+LOGBAK cs.log.old
+PID cs.pid
+HELPDIR XHELP
+#
+# ID of level 1000 user
+#
+MASTER_NICK seks
+MASTER_MASK *!*seks@*.*
+MASTER_PASSWD qwerty
+#
+# Channel where broadcast messages go
+#
+BROADCAST #cservice_info
+#
+# ID to put in verify replies
+#
+VERIFYID CSERVICE
+#
+# Uworld informations
+#
+UWORLD_NICK Uworld
+UWORLD_HOST *.nssl.uoknor.edu
+UWORLD_SERVER Uworld.undernet.org
+#
+UWORLD2_NICK Uworld2
+UWORLD2_HOST undernet.org
+UWORLD2_SERVER Uworld2.undernet.org
+#
+# Topic to set when CALMDOWN is used
+#
+CALMDOWNTOPIC CALMDOWN was used on this channel
+#
+# End of configuration file

@@ -1,0 +1,22 @@
+SYNTAX: ban [channel] <nick|n!u@h> [duration] [level] [reason]
+        unban [channel] <nick|n!u@h>
+        cleanbanlist
+
+ban adds an entry to the 'banlist'. If channel is supplied,
+it is used instead of the current channel. duration specifies how
+long the entry should remain in the list (in hours). level is an
+integer ranging from 0 to your access level on the channel. reason
+is not mandatory and can be up to 80 characters long.
+
+The effect of this command depends on the level supplied:
+	  level 	| effect                          
+	  >= 20		| user is not allowed to be chanop
+	  >= 75		| user is not allowed to be on the
+			| channel at all.
+Intermediate levels are used internally to manage warnings.
+
+unban removes a ban from the banlist.
+
+cleanbanlist purges expired entries from the banlist. This should
+be handled automatically, so this command should only be used as a
+debug tool.

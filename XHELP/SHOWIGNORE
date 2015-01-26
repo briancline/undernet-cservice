@@ -1,0 +1,3 @@
+SYNTAX: showignore
+
+Gives the list of users currently being ignored by $NICK.

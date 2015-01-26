@@ -1,0 +1,4 @@
+SYNTAX: topic [channel] <new topic>
+
+topic changes the topic on channel (or on the current 
+channel if none is given) to new topic.

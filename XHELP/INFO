@@ -1,0 +1,25 @@
+ Undernet's Channel Service Information                         
+This is the Undernet Channel Service written by Robin Thellend
+aka SeKs <intru@step.polymtl.ca>.
+
+A registered channel is under the responsibility of its channel
+manager who has full control over it.  To register a channel,
+complete the registration that can be found at
+http://cservice.undernet.org/regist/ and follow the instructions.
+
+It is also recommended that you read the Channel Service Committee
+Guidelines before sending in an application.  This will explain the
+process of registering a channel with the Undernet Channel Service.
+
+The guidelines are available on the WWW at
+http://cservice.undernet.org/ and by FTP at
+ftp://ftp.undernet.org/pub/irc/docs/X/CSC-guidelines
+
+They are also available from Undernet IRC by:
+/msg HelpBot get CSC-guidelines
+
+The number of channels one can register is currently limited to one 
+channel per person.  Registration takes 2 to 3 weeks to complete.
+
+For more general info, contact cservice@undernet.org
+For technical info, contact cservice-coders@undernet.org.

@@ -1,0 +1,12 @@
+SYNTAX: suspend [channel] <nick|address> <duration> [s|m|h|d]
+        unsuspend [channel] <nick|address>
+
+The command suspend is used to remove one's access to this service
+for a certain time specified with the duration argument. Time units
+can be specified for duration (seconds,minutes,hours or days).
+
+When a user is suspended he or she cannot use any command requiring
+an access level greater than zero. One can only suspend a user who
+has an inferior access than his.
+
+unsuspend removes a suspension (same as suspend with a duration 0)

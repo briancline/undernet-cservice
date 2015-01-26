@@ -1,0 +1,16 @@
+SYNTAX: adduser [channel] <nick> [mask] <access> <password>
+        modinfo [channel] <field> <nick|address> <new value>
+        remuser [channel] <nick|address>
+
+adduser gives the given access to anyone matching mask.
+nick is only used as a reference and should be the nickname the
+person uses to most. If nick is online, mask is not necessary,
+and the userhost will be looked up automatically.  If default user
+flags are defined (see help set), those flags are used.
+
+modinfo is used to modify an entry in the userlist. field can
+be either of the followings: MATCH, ACCESS, AUTOOP, PASSWORD.
+new value must be ON or OFF for field AUTOOP, or other
+valid values for the other fields.
+
+remuser removes the access of the given user.

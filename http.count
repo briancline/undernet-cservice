@@ -1,0 +1,5 @@
+#!/bin/sh
+# @(#)CS/http.count $Id: http.count,v 1.3 1996/10/20 16:23:25 seks Exp $
+
+grep CONNECTION http.log | cut -d: -f4 | cut -d" " -f5 | sort | uniq -c | sort
+

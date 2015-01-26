@@ -1,0 +1,18 @@
+SYNTAX: help <topic>
+
+help displays the help file associated with topic.
+Use showcommands to get a list of commands available
+to you. 
+
+Commands must be sent by MSG and if the command has effect
+on a specific channel, that channel's name must be the
+first argument. ie:
+        /msg $NICK op #blah nick    to op nick on channel #blah
+or      /msg $NICK op nick          if you are on channel #blah
+
+The administration of Undernet and the provider of this service
+are NOT responsible for what is going on the channels this 
+service is on.
+
+To get more information on this service, use help info
+

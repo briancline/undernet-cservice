@@ -1,0 +1,4 @@
+SYNTAX: showcommands [channel]
+
+showcommands gives you the commands that are available to you
+on channel (or current if no channel is given).

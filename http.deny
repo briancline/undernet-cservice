@@ -1,0 +1,8 @@
+# @(#)CS/http.deny $Id: http.deny,v 1.3 1996/10/20 16:23:25 seks Exp $
+#
+# This file contains the ip addresses that are not granted
+# connection. The first '0' ends the mask and the rest isn't 
+# considered.
+# i.e.  132.207.0.0 will block all connections from 132.207.*
+#
+#127.0.0.0

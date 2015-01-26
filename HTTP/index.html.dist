@@ -1,0 +1,105 @@
+<HEAD>
+<TITLE>Undernet Channel Service</TITLE>
+</HEAD>
+<BODY BGCOLOR=#000000 TEXT=#FFFF00 LINK=#FF0000 VLINK=#FF00FF>
+<FONT SIZE=4>
+<CENTER><H1>The Undernet Channel Service Page</H1>
+<IMG SRC="/files/hline.gif" 
+ALT="===================================================================="><P>
+<B><I>Welcome!  This page provides Undernet users of the Channel
+Service bot with a familiar, easy to use WWW interface to its
+databases.  It is still in construction, and more services will be
+added to it as time goes by, but you may find it useful
+already.</I></B><P></CENTER>
+<HR>
+To access X's database, use <A HREF="http://irc.direct.ca:7357/">http://irc.direct.ca:7357/</A><BR>
+To access W's database, use <A HREF="http://www.wildstar.net:7357/">http://www.wildstar.net:7357/</A><BR>
+<HR>
+<H2>General information</H2>
+<DL>
+<DD><IMG SRC="/files/reddrop.gif" ALT="*">
+<A HREF="/files/guidelines.html">The Channel Service Committee Guidelines</A>
+</DD>
+<DD><IMG SRC="/files/reddrop.gif" ALT="*">
+<A HREF="/files/faq.html">The Channel Service FAQ</a>
+</DD>
+<DD><IMG SRC="/files/reddrop.gif" ALT="*">
+<A HREF="/files/cmfaq.html">The Channel Managers' FAQ</a>
+</DD>
+<DD><IMG SRC="/files/reddrop.gif" ALT="*">
+<A HREF="/files/chanopfaq.html">The Channel Operators FAQ</a>
+<DD><IMG SRC="/files/reddrop.gif" ALT="*">
+<A HREF="/files/X_registration_form.txt">Channel Service Application Form</a>
+</DD>
+<DD><IMG SRC="/files/reddrop.gif" ALT="*">
+<A HREF="mailto:cservice@undernet.org">Send Email to the Channel Service Mailing List</A>
+</DD>
+</DL>
+<HR>
+<H2>User list management</H2>
+Manage or consult your channel's user list from the comfort of your
+favorite WWW-browser.  This feature will allow you to view the complete
+list of users on the channel you specify.  Just enter the channel name
+into the blank and click on "Go baby!"<P>
+<FORM METHOD="POST" ACTION="/userlist/">
+<B>Enter the channel name: </B><INPUT NAME="CHANNEL" TYPE="TEXT" SIZE=30 MAXLENGTH=80>
+<INPUT TYPE="SUBMIT" VALUE="Go baby!">
+</FORM>
+<HR>
+<H2>Ban list management</H2>
+Same as the above, but this time for the ban list. Just enter the channel
+name into the blank and click on the "Go baby!"<P>
+<FORM METHOD="POST" ACTION="/banlist/">
+<B>Enter the channel name: </B><INPUT NAME="CHANNEL" TYPE="TEXT" SIZE=30 MAXLENGTH=80>
+<INPUT TYPE="SUBMIT" VALUE="Go baby!">
+</FORM>
+<HR>
+<H2>Channel information</H2>
+Obtain the information X/W has stored in its databases with regards to
+the channel you specify.  This is an interesting way to find out
+whether your channel has been registered. :)  Again, just enter the
+channel name in the blank field and click on "Go Baby!".<P>
+<FORM METHOD="post" ACTION="/chaninfo/">
+<B>Enter the channel name: </B><INPUT NAME="CHANNEL" TYPE="TEXT" SIZE=30 MAXLENGTH=80>
+<INPUT TYPE="SUBMIT" VALUE="Go baby!">
+</FORM>
+<HR>
+<H2>/WHOIS on the web!</H2>
+Find out if your friends (or enemies) are currently signed on to
+Undernet IRC.  This works just like the IRC /WHOIS command.  Just
+supply a nick and click on "Go Baby!"<P>
+<FORM METHOD="post" ACTION="/whois/">
+<B>Please enter a nick: </B><INPUT NAME="NICK" TYPE="TEXT" SIZE=30 MAXLENGTH=80>
+<INPUT TYPE="SUBMIT" VALUE="Go Baby!">
+</FORM>
+<HR>
+<H2>Online HELP files!</H2>
+You can access the channel service HELP files from this page. All you
+have to do is enter a command and then click on "Go Baby!"<P>
+<FORM METHOD="post" ACTION="/HELP/">
+<B>Please enter a command: </B><INPUT NAME="ARG" TYPE="TEXT" SIZE=30 MAXLENGHT=80>
+<INPUT TYPE="SUBMIT" VALUE="Go Baby!">
+</FORM>
+<HR>
+<H2>Undernet Resources</H2>
+Undernet offers several services via the World Wide Web.  These few
+sites offer a good jumping off point to several of them.<P>
+<DL>
+<DD><IMG SRC="/files/reddrop.gif" ALT="*"><A
+HREF="http://www2.undernet.org:8080/~cs93jtl/Undernet.html">The Official 
+Undernet Page</A></DD>
+<DD><IMG SRC="/files/reddrop.gif" ALT="*"><A
+HREF="http://undernet.infowest.com/index.html">Aaron Gifford's Undernet
+Page</A></DD>
+<DD><IMG SRC="/files/reddrop.gif" ALT="*"><A
+HREF="http://aslan.pr.mala.bc.ca/~warren/usercom.html">The Undernet
+User Committee Home Page</a></DD>
+<DD><IMG SRC="/files/reddrop.gif" ALT="*"><A
+HREF="/files/links.html">Links to other pages</A></DD>
+</DL>
+<HR>
+<FONT SIZE=3>
+<I>This page is brought to you by the administrators of the <a
+href="mailto:cservice@undernet.org">Undernet Channel Service
+Committee</a>.</I>
+</BODY>

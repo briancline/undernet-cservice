@@ -1,0 +1,276 @@
+<HTML>
+<HEAD>
+<TITLE>Undernet Channel Service: Channel Operators FAQ</TITLE>
+<LINK REV="made" HREF:"mailto:marmi@soonernet.com">
+<BODY BGCOLOR="#000000" TEXT="#ffff00" LINK="#ff0000" VLINK="#ff00ff">
+<CENTER>
+<p>
+<hr>
+<h1>Undernet Channel Service Committee</h1>
+<h2>Channel Operator's FAQ</h2>
+<hr>
+</center>
+<strong>
+<blockquote>
+Introduction:	This FAQ has been put together by the Undernet Channel Service Committee for any and all users who have Channel Operator status on a Registered Channel on the Undernet.<br>
+</blockquote>
+<hr>
+1)  What is the Undernet Channel Service Committee?<br>
+<img src="reddrop.gif">The Undernet Channel Service Committee is a sub committee of the Undernet User Committee (User-Com).  The CSC (Channel Service Committee) is in charge of administrating the Channel Service and assisting users with its use.<p>
+
+2)  Who are X and W?<br>
+<img src="reddrop.gif">X and W are the two Channel Service (CService) bots.  They reside on Undernet's registered channels.  Each registered channel has either X or W, but not both.  They are exactly the same in the functions they 	can perform.  The bots
+ hold separate user lists for each channel they reside on.  These are lists of users for each channel who have access to certain functions on the bots depending on the level and settings of the user.<p>
+
+3)  What is a Channel Operator?<br>
+<img src="reddrop.gif">A Channel Operator (ChanOp) is a user who has been given the privilege of helping the Channel Manager run the channel.  ChanOps are expected to abide by all of the Channel Manager's rules, as well as CService's rules.<p>
+
+4)  What are the responsibilities of a ChanOp?<br>
+<img src="reddrop.gif">A ChanOp is responsible for helping to maintain the atmosphere that the Channel Manager has set for his/her channel.  This means ensuring that all users abide by the set channel rules and warning/removing users who do not abide by 
+them.<p>
+
+5)  Who is the Channel Manager?<br>
+<img src="reddrop.gif">The Channel Manager is the person who registered the channel.  There is generally only one Channel Manager, unless a special arrangement has been made with CService to have more than one.  The Channel Manager makes the decisions on
+ how the channel is to be run.  This is the person to go to first if you have a problem on your channel.<p>
+<center>
+	To find out who the Channel Manager is:<br>
+		/msg x chaninfo #channel<br>
+			or<br>
+		/msg w chaninfo #channel<br>
+	Depending on which bot resides on that particular channel.<br>
+<p>
+</center>
+*** All examples that follow will refer to X, but can be used with W as well.<p>
+
+6)  Can a user be a ChanOp even if s/he is not on the user list?<br>
+<img src="reddrop.gif">Yes.  A user can gain ops on a channel if they are given operator status from a current operator.  This does not mean that just because someone makes you an op, you automatically have access to X/W.  All it means is that you can pe
+rform any operator commands that you can normally do on a non-registered channel.<p>
+<blockquote>
+Keep in mind that it is not a good idea to give ops to just anyone on the channel, though, since as an operator they have the ability to kick and ban anyone off the channel including X/W.  Most forms of abuse of X/W are from users who do not know what X/
+W are nor know and understand the CService rules.  If you are going to give someone ops make sure that they will not be abusive and they will not try to kick/ban X/W off the channel.  Also, some Channel Managers have their own rules about giving out ops 
+to users who are not on X/W's user list, so make sure you follow the Channel Manager's rules as well.</blockquote><p>
+
+7)  How do I know who is on the user list?<br>
+<img src="reddrop.gif">You can find out if someone is on the user list for a channel by:<br>
+<center>
+/msg x access #channel nickname<p>
+
+If the person is on the list for that channel, you will get a notice which looks like this:<p>
+</center>
+<blockquote>
+-X- USER: teal (*!*erf103@*.psu.edu) ACCESS: ?450<br>
+-X- CHANNEL: #Help -- AUTOOP: YES -- PROTECT: YES<br>
+-X- LAST SEEN: 10 days, 19:42:16 ago<p>
+
+Line 1: nickname, user@host mask and access level<br>
+Line 2: channel name, autoop setting, protect setting<br>
+Line 3: how long ago user was last seen on the channel<p>
+</blockquote>
+
+8)  How do I get added to a channel's user list?<br>
+<img src="reddrop.gif">Only ChanOps with ACCESS level 400 or higher can add users to the channel's user list.  Who gets added is usually determined by the Channel Manager.  Some channels may have a recommendation/voting process to add new ChanOps.  Best 
+bet is to ask someone who is a ChanOp on that channel.<p>
+
+9)  What is this ACCESS level thing?<br>
+<img src="reddrop.gif">A user's level determines what commands the user has access to on X or W.  Users will have access to the commands for their level, plus all commands for any levels below them.  For example, a level 75 user will have access to ban a
+nd unban, plus the level 50 and level 0 commands.<p>
+
+To find out what commands you have access to on a particular channel,<p>
+<center>
+/msg x showcommands #channelname<p>
+</center>
+<img src="reddrop.gif">Here are the commands for the all the different levels:<br>
+<ul>
+<ul>
+<li>Level  500: set
+<li>Level  450: addchan join part remchan
+<li>Level  400: adduser clearmode modinfo remuser status
+<li>Level  100: deop invite op suspend unsuspend
+<li>Level   75: ban unban
+<li>Level   50: kick topic
+<li>Level    0: access banlist chaninfo deauth help lbanlist map motd newpass pass showcommands showignore verify<p>
+</ul>
+</ul>
+<img src="reddrop.gif">Some Notes:<br>
+
+<ul>
+<ul>
+<li>500...........	Channel Manager.<p>
+
+<li>450 & 400.....  Trusted Administrators.  These are ChanOps that the Channel Manager has allowed to help in administrative duties on the channel.<p>
+
+<li>100...........  These ChanOps can command X to perform all regular ChanOp commands, including some special X/W commands.<p>
+
+<li>75 & 50.......  These ChanOps can command X to perform most regular ChanOp commands (see above list) as well as some special ones.<p>
+
+<li>0.............  All users who are not on the bot's user list for that channel.  Also, any ChanOp who has a password set, but has not yet msg'd the bot with his/her password will be 	seen as a level 0 user.<p>
+</ul>
+</ul>
+<blockquote>
+NOTE:  For "regular" ChanOp commands (ie. kick, ban, unban, op, deop) these levels just allow for the ChanOp to command the bot to do them.  Regardless of the ChanOp's level, these commands can still be performed manually by the ChanOp.<p>
+</blockquote>
+<pre>
+	For example:
+		A level 100 ChanOp can op another user either by:
+			/msg x op #channel nickname
+				or
+			/mode #channel +o nickname
+
+		A level 50 or level 75 ChanOp can op another user by:
+			/mode #channel +o nickname
+		BUT cannot /msg x op   as the level 100 can.
+</pre>
+<p>
+10) What does the ? next to a user's ACCESS level mean?<br>
+<img src="reddrop.gif">The ? just means that the bot is not sure if the user is on-line.  This could mean that either the user is not signed on, or has not given their password to identify themselves yet.<p>
+
+11) What is AUTOOP?<br>
+<img src="reddrop.gif">When AUTOOP is set to ON, you will be automatically opped by X upon entering the channel.  If you have a password set though, then AUTOOP will only work if you /msg X with your password BEFORE you enter the channel.<p>
+<blockquote>
+If AUTOOP is set to OFF, you will need to /msg x op #channel yournick for X to op you.  Again, if you have a password set, you will need to /msg x with your password before you ask it to op you.<p>
+</blockquote>
+12) What is PROTECT?<br>
+<img src="reddrop.gif">When PROTECT is set to ON, you will be protected by X from other ops banning or deopping you.  What this means is that if someone tries to ban or deop you, they will be deopped (even if they are protected also) and X will automatic
+ally unban or reop you.<p>
+
+13) Why would I use a password and how do I set one?<br>
+<img src="reddrop.gif">A password gives more protection against someone faking your user@host and obtaining ops.  If you have a password set, X/W will only recognize you if you have the correct user@host AND give the correct password.<p>
+
+	To set your password for the first time:<br>
+<ul>
+<ul>
+	<li>/msg x@channels.undernet.org newpass #channel yourpassword
+	<li>/msg w@channels2.undernet.org newpass #channel yourpassword
+</ul>
+</ul>
+<p>
+	To change your password:<br>
+<ul>
+<ul>
+	<li>Identify yourself first:
+	<li>/msg x@channels.undernet.org pass #channel currentpassword
+	<li>/msg w@channels2.undernet.org pass #channel currentpassword
+</ul>
+</ul>
+<p>
+	Then change it:<br>
+<ul>
+<ul>
+	<li>/msg x@channels.undernet.org newpass #channel newpassword
+	<li>/msg w@channels2.undernet.org newpass #channel newpassword
+</ul>
+</ul>
+<p>
+	NOTES:<br>
+<ul>
+<ul>
+	<li>Once you have sent your password to X once, it will remember who you are until you signoff.  Also, if you get caught on the opposite side of a netsplit from X, it will consider you as having signed off and it will forget who you are until you /msg y
+our  password again.
+
+	<li>x@channels.undernet.org and w@channels2.undernet.org are only needed when sending a newpass or a pass command.  This was done to ensure that as long as you use the proper command, you will always be sure it is the real X or W when sending your passw
+ord. There were too many problems with users taking the nick X or W when one was split, and being able to obtain passwords that way.
+ 
+    	<li>If you IRC from a site with a lot of users, eg, a university or a large Internet Service Provider, it is wise to have a password to guard against other people imitating you and causing problems on your channel and with X/W and CService.
+</ul>
+</ul>
+<p>
+14) What happens if I can't remember my password?<br>
+<img src="reddrop.gif">Your password will have to be reset by any 400 or higher level ChanOp on your channel.  Speak to one of them.  You can find out who these are by:<p>
+<center>
+		/msg x access #channel -min 400<br>
+			or<br>
+		/msg x chaninfo #channel  (tells you who the channel manager is)<p>
+
+If you are the Channel Manager, then you will have to get a CService Admin to reset it for you.  Ask in #cservice or email cservice@undernet.org
+</center>
+<p>
+15) What is a Hack Script and why can't it be used?<br>
+<img src="reddrop.gif">Hack scripts were written by EFnet users to prevent people from "hacking" ops on channels during netsplits.  Since the Undernet uses new code for its servers which prevents users from getting ops during a netsplit, these scripts ar
+e NOT necessary at all here.<p>
+<blockquote>
+The reason it can't be used with X or W on a channel is because X and W technically "hack" ops when they join a channel.  If an op is running one of these scripts, it will detect this hack and then deop X or W.<p>
+</blockquote>
+
+16) What is a protect script and how can it cause problems?<br>
+<img src="reddrop.gif">Protect scripts, such as the mIRC Friends List, work similarly to X/W's PROTECT function.  CService asks that you please do NOT use these scripts on registered channels.  If you have someone on your protect list, and for some reaso
+n they get banned/deopped/kicked by X/W, then your script will try to ban/deop/kick (depending upon the script) X/W.  This is considered abuse of the Channel Service.<p>
+
+17) What exactly does CService consider abuse?<br>
+<img src="reddrop.gif">Any time X or W is kicked, banned and/or deopped, this is considered abuse of the Channel Service.  The CService bots are not to be played with.  So-called "testing" of the bots is not allowed.  Abusing the Channel Service could re
+sult in you losing your ops or even being banned from the channel.  The channel could also be placed in NoOp mode or even purged if necessary to prevent further abuse.<p>
+
+18) What is NoOp mode?<br>
+<img src="reddrop.gif">NoOp mode means that no one except X will be able to have ops on the channel and all kicks/bans must be done through X.  Here is where the access level really determines what commands a user can perform.<p>
+
+19) Where can I get more information about X/W and CService?<br>
+<img src="reddrop.gif">Online, you can '/msg x help' for help with commands.  You can also obtain help from someone in #cservice or any of the CService Admins who happen to be online.  If you can't find someone online to help, you can email cservice@unde
+rnet.org and someone will respond via email.  Also, all CService documents can be obtained from ftp://ftp.undernet.org/pub/irc/docs/cservice/<p>
+
+20) Who are the Channel Service Administrators?<br>
+<img src="reddrop.gif">The Channel Service Administrators are users who have administrative access to the Channel Service bots.  The CService Admins are volunteers who are committed to making sure the Channel Service is used as it was created to and that
+ the Channel Service is not abused.  CService Admins represent the Undernet Channel Service, as well as the Undernet as a whole.<p>
+
+<img src="reddrop.gif">Below is a list of Administrators as of the time this FAQ was written.  If a user comes into your channel claiming to be a CService Administrator or a CService Helper, you may ask them to authenticate themselves to the bot, and the
+n you can use:<p>
+<center>
+ /msg x,w verify nickname<p>
+</center>
+If the user is a true Admin or Helper, you will get a notice from the bot that looks similar to:<p>
+<center>
+-X- Teal!~friedman@moscow.cse.psu.edu is a trusted CSERVICE admin<p>
+
+If the user is not verifiable by either of the bots, then assume the user is not an Admin or Helper unless a verifiable person can vouch for them.<p>
+<hr>
+<h3>Current Cservice Administrators</h3>
+</center>
+** Creator of the Undernet Channel Service<p>
+
+SeKs - <a href="mailto:seks@alias.undernet.org">seks@alias.undernet.org</a><p>
+
+** Channel Service Coordinator<p>
+
+Super - <a href="mailto:super@alias.undernet.org">super@alias.undernet.org</a><p>
+
+** Channel Service Coders<p>
+
+Kev - <a href="mailto:kev@alias.undernet.org">kev@alias.undernet.org</a><br>
+WildThang - <a href="mailto:wildthang@alias.undernet.org">wildthang@alias.undernet.org</a><p>
+
+** Channel Service is housed by:<p>
+FootPrint - <a href="mailto:footprint@alias.undernet.org">footprint@alias.undernet.org</a> (X)<br>
+WildThang - <a href="mailto:wildthang@alias.undernet.org">wildthang@alias.undernet.org</a>(W)<p>
+
+** Senior Administrators<p>
+Chaos - <a href="mailto:chaos@alias.undernet.org">chaos@alias.undernet.org</a><br>
+Cowboy - <a href="mailto:cowboy@alias.undernet.org">cowboy@alias.undernet.org</a><br>
+Footprint - <a href="mailto:footprint@alias.undernet.org">footprint@alias.undernet.org</a><br>
+Jini - <a href="mailto:jini@alias.undernet.org">jini@alias.undernet.org</a><br>
+Meredith - <a href="mailto:meredith@alias.undernet.org">meredith@alias.undernet.org</a><br>
+Morrissey - <a href="mailto:jradford@npl.com">jradford@npl.com</a><br>
+Striker - <a href="mailto:striker@alias.undernet.org">striker@alias.undernet.org</a><br>
+Teal - <a href="mailto:teal@alias.undernet.org">teal@alias.undernet.org</a><p>
+** Administrators<p>
+AnElf - <a href="mailto:anelf@alias.undernet.org">anelf@alias.undernet.org</a><br>
+BitBT - <a href="mailto:bitbt@alias.undernet.org">bitbt@alias.undernet.org</a><br>
+Crip - <a href="mailto:crip@alias.undernet.org">crip@alias.undernet.org</a><br>
+Jase - <a href="mailto:jase@alias.undernet.org">jase@alias.undernet.org</a><br>
+MatthewA - <a href="mailto:matthewa@alias.undernet.org">matthewa@alias.undernet.org</a><br>
+Signe - <a href="mailto:signe@alias.undernet.org">signe@alias.undernet.org</a><p>
+
+<hr>
+</center>
+Closing Note:   If there is anything in this document that needs to be fixed or anything that you feel should be added, please send suggestions to <a href="mailto:teal@alias.undernet.org">teal@alias.undernet.org</a><br>
+<hr>
+Thanks to the various CService Admins and Helpers for their suggestions.
+<hr>
+<center>
+Undernet Channel Service Committee<br>
+Channel Operator's FAQ<br>
+Teal!friedman@cse.psu.edu<br>
+Version 1.2<br>
+3/22/96<p>
+</center>
+<P>
+<HR>
+<A HREF="/"><IMG SRC="/files/b_arrow.gif">Back to main page</A>
+

@@ -1,0 +1,6 @@
+SYNTAX: kick [channel] <nick> [reason]
+        kick [channel] <pattern> [reason]    (Level 200)
+
+This command kicks nick or any user matching the given
+match pattern. If a reason is supplied, it will be
+used as kick comment.

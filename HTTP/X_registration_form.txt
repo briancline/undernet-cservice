@@ -1,0 +1,74 @@
+###################################################################
+#                     Undernet Channel Service                    #
+#                        Registration Form                        #
+###################################################################
+# Instructions:                                                   #
+#	o  Read the Channel Service Committee Guidelines          #
+#	   This document can be obtained from:                    #
+#	     ftp://ftp.undernet.org/pub/irc/docs/X/CSC-guidelines #
+#	     /msg helpbot get CSC-guidelines                      #
+#	o  Fill out this registration form completely             #
+#	   If you need help, ask in #cservice.                    #
+#	o  Email completed form to cservice@undernet.org          #
+#          Please be sure to include this form in the             #
+#	   BODY of your email, NOT as an attachment.              #
+#	o  If you do not receive acknowledgement of receipt of    #
+#	   this form within 2 weeks, please email it again,       #
+#	   stating that it is a second attempt.                   #
+#	o  If your channel is not registered within 4 weeks,      #
+#	   you may email cservice@undernet.org to find out why    #
+###################################################################
+
+-------------------------------------------------------------------
+NOTE:   Channel registration is not meant as a means to start a new
+	channel.  It is meant for previously established channels
+	to have an opportunity to have some stability.  If you are
+	first starting a new channel, then just start it, give it
+	some time to make sure you have a decent userbase, and then 
+	consider registration.  Thanks.
+-------------------------------------------------------------------
+
+A) Your Real Name : 
+
+B) The usual nick you use :
+
+C) Your E-mail address :
+
+D) The user@host that you use on irc :
+   {the address in your /whois on IRC}
+   {please try to include asterisks (*) wherever necessary}
+
+E) Channel Name : 
+
+F) Purpose of channel :
+   {brief description}
+   
+G) Supporter's list :
+	This is a list of people who support you as channel 
+   manager of this channel and who will frequent the channel.
+   You may want to CC them a copy of your application.
+   - Please do NOT include yourself as a supporter.
+   - Please do NOT use 2 (or more) different email addresses 
+     of a user as being 2 (or more) different supporters.  
+     Each entry in this list must be a different user.
+
+   ---------------------------------------------------------------
+   		Nickname	|	E-mail address                  
+   ---------------------------------------------------------------
+ 
+ 1:
+ 2:
+ 3:
+ 4:
+ 5:
+ 6:
+ 7:
+ 8:
+ 9:
+10:
+   _______________________________________________________________
+
+   PLEASE NOTE -- You must have at least 10 supporters to register
+                  a channel. You also may only register 1 channel. 
+   _______________________________________________________________
+

@@ -1,0 +1,20 @@
+SYNTAX: access [channel] [nick] [-min n] [-max n]
+                   [-autoop] [-noautoop]
+                   [-modif [mask]]
+
+access shows the access of nick (or yours if no nick is
+given) on channel (or current if no channel is given). The 
+following options can also be used to filter the list:
+
+     -min n        Show only users with access higher than
+                   or equal to n.
+     -max n        Show only users with access lower than or
+                   equal to n.
+     -autoop       Show only users with the autoop flag on.
+     -noautoop     Show only users with the autoop flag off.
+     -modif [mask] Show who made the last modification. If a search
+                   mask is given, only the entries that have been
+                   last modified by someone matching the mask will
+                   be given.
+
+Options can be combined at wish. (-autoop -noautoop == No match.)

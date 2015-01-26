@@ -1,0 +1,6 @@
+SYNTAX: invite [#channel] <nick>
+
+invite makes $NICK invite nick to #channel for you. 
+This is useful on invite-only channels. For example, you can do
+		/msg $NICK invite #mychan mynick  
+to make $NICK invite you to your channel.

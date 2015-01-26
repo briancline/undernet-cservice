@@ -1,0 +1,32 @@
+SYNTAX: set [channel] <variable> <value>
+
+set is used to configure $NICK's reactions upon different
+situations. variable is one of the following:
+  MassDeopPro	NickFloodPro	FloodPro  UserFlags
+  NoOp		AlwaysOp	OpOnly    StrictOp
+  Description   URL		AutoTopic
+
+MassDeopPro is the maximum number of deops one can issue
+before the MassDeop protection is activated.
+NickFloodPro is maximum number of nick changes one can do
+before the NickFlood protection is activated.
+FloodPro is the limit of lines one can send to a channel.
+NOTE: since $NICK is umode +d (Deaf) the floodpro doesn't work for
+      channels messages. It only works for TOPICs, KICKs, etc.
+UserFlags is the default flags given to a newly added user.
+NoOp is a special mode where only $NICK can be channel operator.
+AlwaysOp makes $NICK always be op.
+OpOnly disables all commands except op.
+StrictOp will only allow authenticated users to be op.
+Description will set the official channel description.
+URL will set a link to the channel home page.
+AutoTopic will reset the topic to the official URL and
+description of the channel every 30 minutes *if* the channel
+is active.
+
+MassDeopPro, NickFloodPro and FloodPro have integer values and 
+are all based on a 15-second period.
+UserFlags can be 1 (autoop) or 0 (no autoop).
+NoOp, AlwaysOp, OpOnly, StrictOp and AutoTopic have either ON or OFF
+values.
+Description and URL are strings up to 80 characters long.

@@ -1,0 +1,264 @@
+<HTML>
+<HEAD><TITLE>Channel Managers' FAQ</TITLE></HEAD>
+<BODY bgcolor=#000000 text=ffff00 link=ff0000 vlink=#ff00ff>
+<FONT SIZE=4>
+
+<CENTER><H1>Channel Managers FAQ</H1></CENTER>
+
+<HR>
+
+<B>IMPORTANT:</B> The channel service bot users an Undernet service called 
+Uworld to gain ops on channels. To some scripts/bots (such as Phoenix), 
+this is considered a nethack. Please ensure that no one uses nethack 
+protection or hack protection scripts. These scripts deop X/W and are 
+considered abuse of the Channel service. It is not possible to get ops 
+off of a netsplit on Undernet. DO NOT DO ANY "TESTING" WITH X/W. 
+If you have questions send mail or drop by #cservice and the Channel 
+Service Committee will answer your questions for you.
+<P>
+
+<HR><P>
+
+Introduction:  This FAQ is to answer general questions that channel 
+managers may have in regards to the Undernet Channel Service (UCS). 
+If you don'tknow what the UCS is you should get the Undernet Channel 
+Service FAQ fromftp.undernet.org in /pub/irc/docs/cservice. In all
+examples, we will assume thatthe channel name is #foo, the nick is 
+foobar, the user@host is foo@test.com.For ease of documentation, X 
+will be used in all examples, but there are 2 channel service bots, X and W.
+<P>
+<DL>
+<DD><A HREF="#1">I received my confirmation letter from the Channel Service
+Committee (CSC), what does this mean?</A></DD>
+<DD><A HREF="#2">What are my responsibilities as the channel manager?</A></DD>
+<DD><A HREF="#3">How does X know that I am the right person.</A></DD>
+<DD><A HREF="#4">So I have access to the the channel, what can I do?</A></DD>
+<DD><A HREF="#5">What do you mean "hacked" user@host?</A></DD>
+<DD><A HREF="#6">What happens if I have a password set.</A></DD>
+<DD><A HREF="#7">I have my access, what now?</A></DD>
+<DD><A HREF="#8">What are channel defaults?</A></DD>
+<DD><A HREF="#9">X is on my channel, how do I configure it?</A></DD>
+<DD><A HREF="#10">What is Massdeop, NickFlood, FloodPro?</A></DD>
+<DD><A HREF="#11">What is NoOp and AlwaysOp mode?</A></DD>
+<DD><A HREF="#12">How to I add other users to X's oplist?</A></DD>
+<DD><A HREF="#13">What are the different levels?</A></DD>
+<DD><A HREF="#14">How can I see my userlist?</A></DD>
+<DD><A HREF="#15">How can I give someone AUTOOP?</A></DD>
+<DD><A HREF="#16">How can I get a second 500 level user?</A></DD>
+<DD><A HREF="#17">X used to respond to me, but now it is not, what happend?</A></DD>
+<DD><A HREF="#18">I can't be on-line 24 hours a day, how will I know if someone is abusing X on my channel?</A></DD>
+<DD><A HREF="#19">So is that it?</A></DD>
+</DL>
+<P>
+<HR>
+<P>
+<A NAME="1">
+<h2>1 - I received my confirmation letter from the Channel Service Committee (CSC), what does this
+mean?</h2>
+The confirmation letter means you have been added as the channel manager 
+of the channel that you applied for. If you are anxious and/or having mail 
+problems you can check if your channel has been added by doing a 
+/msg x,w chaninfo #channel. This will return a response from both channel 
+service bots to say wether your channel has been registered or not. Your 
+channel will only be registered on one of the two bots.
+<P>
+<HR>
+<P><A NAME="2">
+<h2>2 - What are my responsibilities as the channel manager?</h2>
+As the channel manager, you are responsible for all activities of your 
+channel including its users and bots. It is recommended that you do not 
+run other bots on the channel besides X since there is no need for it. X 
+will always be there and maintains an oplist. You are also
+responsible to ensure that none of your channel operators (including bots) 
+are not running hack protection scripts (such as phoenix). You are also to 
+ensure that none of your ops deop/kick/ban X. This is considered abuse and 
+will be dealt with severly and can result in the removal of X from the 
+channel. "Testing", such as seeing what will happen if X is deop'd,
+is considered abuse.
+<P>
+<HR><P>
+<A NAME="3">
+<h2>3 - How does X know that I am the right person.</h2>
+The Channel Service Committee has added the IRC address that you specified 
+in your application form to the UCS bot X. To check the user@host that 
+has been added you can type /msg X access #channel nick. For example: 
+/msg X access #foo foobar. If your user@host is not correct contact the 
+CSC by sending mail to cservice@undernet.org or drop by #cservice
+and ask.
+<P>
+<HR><P>
+<A NAME="4">
+<h2>4 - So I have access to the the channel, what can I do?</h2>
+To find out what commands you have access to do a /msg X showcommands #channel.
+It is also a good idea to have a password, just in case someone is using
+a hacked username and is able to replicate your user@host name.
+<P>
+<HR><P>
+<A NAME="5">
+<h2>5 - What do you mean "hacked" user@host?</h2>
+Most users with PPP/SLIP access from your site or sites that do not run 
+identd can have hacked user@host. This means, the user can select the 
+userid of their choice at any time they wish. In general it is a good idea 
+to have a password. To setyour password type /msg X newpass password. 
+For example to make Foobar's password into FooPass1 it would be
+/msg X newpass FooPass1.
+<P>
+<HR><P>
+<A NAME="6">
+<h2>6 - What happens if I have a password set.</h2>
+If you have a password set, X will not recognize you until you send X 
+your password (even if you have AutoOp set on. You can identify yourself to 
+X using /msg X pass #channel password. For example: /msg X pass #foo FooPass1X 
+will return a confirmation message to say that your identification iscorrect.
+If you have lost or forgotten your password, contact the CSC and askthem to 
+reset it for you. Once you have identified yourself once, you should not have
+to do it until you log off of IRC. In some instances of netsplits and the 
+rare occurance that X needs to be restarted, you will need to resend your 
+password.
+<P>
+<HR><P>
+<A NAME="7">
+<h2>7 - I have my access, what now?</h2>
+First thing you will want to do is move X onto your channel by sending X 
+a join message /msg X join #channel. For example: /msg X join #foobar.
+To have X leave your channel do a /msg X part #channel. This will not remove
+you from the channel service, it will just move X off of the channel. You 
+can bring X back at any time by sending the join message.
+Now you will want to add your channel to X by /msg X addchan #channel.
+For example: /msg X addchan #foobar. This will add #foobar to the list of
+channels. This will add your channel to the channel database for X which 
+must be done before anything else.Also this will set up all of the channel's 
+defaults.
+<P>
+<HR><P>
+<A NAME="8">
+<h2>8 - What are channel defaults?</h2>
+The channel defaults are X modes such as flood protection level, AlwaysOp, 
+NoOp, etc... To see what the X settings are for your channel type 
+/msg X status #channel.
+<P>
+<HR><P>
+<A NAME="9">
+<h2>9 - X is on my channel, how do I configure it?</h2>
+When X is on the channel you can now configure X for the channel. The 
+variables the can be set are: MassDeop, NickFlood, FloodPro, NoOp, and AlwaysOp.
+<P>
+<HR><P>
+<A NAME="10">
+<h2>10 - What is Massdeop, NickFlood, FloodPro?</h2>
+MassDeop is the maximum number of deops one user can do in a 15 second period.
+This is an integer value and is set by /msg X set #channel MassDeop #.
+For example: /msg X #foo MassDeop 5. NickFlood is the maximum number of 
+nick changes one user can do in a 15 second period.
+This is an integer value and is set by /msg X set #channel NickFlood #.
+For example /msg set #foo NickFlood 5. FloodPro is the limit of TOPIC, MODE, 
+and KICKS that one can send to a channel in a 15 secondperiod. This does 
+not cover public floods since X is deaf to all public messages to the channel. 
+This is an integer value set by /msg X set #channel FloodPro #. For example: 
+/msg X #foo Floodpro 20. Any user surpassing the set levels will be kicked 
+or deop'd by X.
+<P>
+<HR><P>
+<A NAME="11">
+<h2>11 - What is NoOp and AlwaysOp mode?</h2>
+NoOp is a special mode where X is the only channel operator. This is an 
+on/off value that can be set by /msg X set #channel NoOp on/off. AlwaysOp 
+is a mode that ensures that X will always be an operator. This canbe set 
+with a /msg X set #channel AlwaysOp on/off. The default for NoOp is Off and 
+AlwaysOp is On. If a user with access >= 450 deops X, AlwaysOp is turned off 
+automatically. If a user with access >= 450 kicks X, AlwaysOp is turned off 
+AND a remchan is issued, so X won't rejoin. NoOp mode can only be reset by the
+channel manager.
+<P>
+<HR><P>
+<A NAME="12">
+<h2>12 - How to I add other users to X's oplist?</h2>
+To add a user to X's oplist you must be at least a 400 level operator on 
+the channel. If you have the correct access, you can addsomeone by
+/msg X adduser #channel nick *!*user@host level password.The pasword and 
+user@host fields are optional and you may only add someone to a lower level 
+than you are. For example, if I am foobar with level 500 (channel manager) 
+and I want to add foo2 who's irc address is foo2@my.own.server with a  password 
+of foopass I would /msg X adduser #foo foo2 *!*foo2@*.own.server 400 foopass
+By placing an extra * in the host name creates a larger host mask that will
+cover differnet server names that the user may have. However a *!*@* would
+be a really bad entry since that covers all users. Be very careful with your 
+use of the * on the userlist.If there are entries that pose a threat to
+X it is considered abuse and will be removed and can result in the complete 
+removal of X from the channel. If the user is on Undernet at the time that 
+you are adding them, X will automatically add the wildcards to the user@host 
+if a /msg X adduser #foo nick level format is used.
+<P>
+<HR><P>
+<A NAME="13">
+<h2>13 - What are the different levels?</h2>
+When adding someone you can give any level you wish as long as it is less
+than your own and it is a positive integer value. However, a user must
+have a certain level to gain certain access.
+Level 500 - Channel Manager<BR>
+>=450 - Trusted Admins (can remove X from the channel)<BR>
+>=400 - List administrator, may add users to the userlist<BR>
+>=100 - Channel Operator
+<P>
+<HR><P>
+<A NAME="14">
+<h2>14 - How can I see my userlist?</h2>
+The user list for the channel can be received by/msg X access #channel * 
+the asterix will show all users that have access on the specified channel.
+If you want to check a specific users access type /msg X access #channel nick.
+<P>
+<HR><P>
+<A NAME="15">
+<h2>15 - How can I give someone AUTOOP?</h2>
+You can give someone autoops on the channel by adding them to the user list
+at any level (that is less than yours) and using the modinfo command.
+/msg X modinfo #channelname AUTOOP nick ON
+This should get the channel service bot to respond and show you the person's
+entry in the database reflecting the change. This also applies to PROTECT.
+<P>
+<HR><P>
+<A NAME="16">
+<h2>16 - How can I get a second 500 level user?</h2>
+In general, there should only be one 500 level user. In some extreme cases 
+the CSC will allow a second channel manager. If there was more than one 500 
+level user there can be disputes with the 500 level users which will lead 
+to problems since all 500 level users have the same access. It is best to 
+choose one person to be the channel manager and have that person add the 
+others at level 499. The only command that the level 500 person has is the
+set command which is rarely used.
+<P>
+<HR><P>
+<A NAME="17">
+<h2>17 - X used to respond to me, but now it is not, what happend?</h2>
+One of three things may be occuring. You may have had your access 
+suspended. Your access can be suspended for deop'ing X, attempting to op 
+someone that is not allowed to be op'd (banned or suspended user), 
+banning/kicking X, etc... To see if you have been suspended type 
+/msg x access #channel mynick Your user@host may also be different. Just
+/msg x access #channel mynick to check if your access is correct. Thirdly, 
+you may need to send X your password if you have one set. If you still 
+cannot get X to respond, contact the Channel Service Committee.
+<P>
+<HR><P>
+<A NAME="18">
+<h2>18 - I can't be on-line 24 hours a day, how will I know if someone is abusing X on my
+channel?</h2>
+If there is abuse of X and a CSC representative is available, they will join 
+the channel and warn the users and answer any questions they might have. If 
+the abuse problem is severe (repeated deop's of X), then the channel will 
+be placed in NoOp mode and the channel topic will be changed to reflect this. 
+Only the channel manager can reset this mode. If you find the channel you 
+manage in NoOp mode, you can assume that there was abuse. This is also a 
+warning for the channel manager to ensure that their users will not abuse X 
+in the future.
+<P>
+<HR><P>
+<A NAME="19">
+<h2>19 - So is that it?</h2>
+No. These are the basics. There are a lot of things in here but there is
+still a lot to learn. Managing a channel is not an easy task. Managing
+a popular channel is even harder. If you are unsure, please ask.
+<P>
+<HR>
+<A HREF="/"><IMG SRC="/files/b_arrow.gif">Back to main page</A>
+

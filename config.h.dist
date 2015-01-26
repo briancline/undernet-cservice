@@ -1,0 +1,304 @@
+/* @(#)CS/config.h.dist $Id: config.h.dist,v 1.16 2000/06/13 05:08:40 lgm Exp $ */
+
+/* Undernet Channel Service (X)
+ * Copyright (C) 1995-2002 Robin Thellend
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *
+ * The author can be contact by email at <csfeedback@robin.pfft.net>
+ *
+ * Please note that this software is unsupported and mostly
+ * obsolete. It was replaced by GNUworld/CMaster. See
+ * http://gnuworld.sourceforge.net/ for more information.
+ */
+
+
+/* BINDADDR is the local address that all the sockets should be
+ * bound to.
+ */
+#define BINDADDR "12.34.56.78"
+
+
+/* DEFAULT_PORTNUM is the port X will try to
+ * connect to. This can be overridden by
+ * DEFAULT_SERVER
+ */
+#ifdef MAIN
+int DEFAULT_PORTNUM = 6667;
+#else
+extern int DEFAULT_PORTNUM;
+#endif
+
+/* DEFAULT_NICKNAME is the nick of the channel service interface
+ * DEFAULT_USERNAME, its username
+ * DEFAULT_HOSTNAME, its hostname
+ * DEFAULT_REALNAME, its realname.
+ */
+#define DEFAULT_NICKNAME "X"
+#define DEFAULT_REALNAME "For help type: \002/msg X help\002"
+
+/* If is very important that all the channel services running
+ * on the same net use the same user@host :)
+ */
+#define DEFAULT_USERNAME "cservice"
+#define DEFAULT_HOSTNAME "undernet.org"
+
+#ifdef MAIN
+char UMODE[10] = "+kid";
+#else
+extern char UMODE[10];
+#endif
+
+/* DEFAULT_SERVER is the server X should connect to.
+ * It can be either "server" or "server:port"
+ */
+#define DEFAULT_SERVER "localhost"
+
+/* SERVERNAME and SERVERINFO are for
+ * X's servername.
+ * PASSWORD is the password sent before the SERVER command.
+ */
+#ifdef MAIN
+char SERVERNAME[80] = "channels.undernet.org";
+char SERVERINFO[80] = "Channel Service";
+char PASSWORD[80] = "pizza";
+#else
+extern char SERVERNAME[80];
+extern char SERVERINFO[80];
+extern char PASSWORD[80];
+#endif
+
+/* HOMEDIR is X's home directory.
+ * A chdir() is issued at the very beginning of
+ * the execution.
+ */
+#ifdef MAIN
+char HOMEDIR[256] = "/home/seks/CS";
+#else
+extern char HOMEDIR[256];
+#endif
+/*#define HOMEDIR "/usr/home/adm/undernet/CS"*/
+/*#define HOMEDIR "/usr/ircd/q/CS"*/
+/*#define HOMEDIR "/home/intru/CS"*/
+
+/* UMASK is the umask used when creating new files
+ */
+#ifdef MAIN
+int UMASK = 0077;
+#else
+extern int UMASK;
+#endif
+
+/* USERFILE is where user lists are stored.
+ */
+#define USERFILE "userlist.dat"
+
+/* DEFAULT_CHANNELS_FILE is the file containing the
+ * list of channel that should be joined by default.
+ * In other words, those that have been addchan'ed :)
+ */
+#define DEFAULT_CHANNELS_FILE "channellist.dat"
+
+/* SHITLIST_FILE is the file where bans are stored
+ */
+#define SHITLIST_FILE "shitlist.dat"
+
+/* EXEC_FILE is the name of the executable for the restart function
+ * (added by Kev)
+ */
+#ifdef MAIN
+char EXEC_FILE[256] = "./cs";
+#else
+extern char EXEC_FILE[256];
+#endif
+
+/* Other useful files..
+ */
+#ifdef MAIN
+char MOTD_FILE[256] = "cs.motd";
+char LOGFILE[256] = "cs.log";
+char LOGFILEBAK[256] = "cs.log.old";
+#undef  CHANNEL_LOG
+#define CHANNEL_LOG_FREQ 3600
+char PIDFILE[256] = "cs.pid";
+char HELP_DIR[256] = "XHELP"; /* must be non-empty */
+#else
+extern char MOTD_FILE[256];
+extern char LOGFILE[256];
+extern char LOGFILEBAK[256];
+extern char PIDFILE[256];
+extern char HELP_DIR[256];
+#endif
+
+/* Information on the main administrator
+ */
+#ifdef MAIN
+char MASTER_REALNAME[80] = "SeKs";
+char MASTER_PASSWD[20] = "XXXXXXXXXX";
+char MASTER_MATCH[80] = "*!*seks@*.*";
+#else
+extern char MASTER_REALNAME[80];
+extern char MASTER_PASSWD[20];
+extern char MASTER_MATCH[80];
+#endif
+#define MASTER_ACCESS 1000
+#define MASTER_CHANNEL "*"
+#define MASTER_FLAGS 0
+
+
+/* Other stuff... 
+ */
+#define PING_FREQ 120           /* seconds */
+#define USERLIST_SAVE_FREQ 7200 /* seconds */
+#define SHITLIST_SAVE_FREQ 7200 /* seconds */
+#define DEFS_SAVE_FREQ     7200 /* seconds */
+#define SYNC_FREQ          7200 /* seconds */
+#define MODE_DELAY 2            /* seconds */
+
+#ifdef MAIN
+char BROADCAST_CHANNEL[80] = "#cservice_info";
+char VERIFY_ID[256] = "CSERVICE";
+#else
+extern char BROADCAST_CHANNEL[80];
+extern char VERIFY_ID[256];
+#endif
+
+#ifdef MAIN
+char UWORLD[10] = "Uworld";
+char UWORLD_HOST[80] = "*.nssl.uoknor.edu";
+char UWORLD_SERVER[80] = "Uworld.undernet.org";
+#else
+extern char UWORLD[10];
+extern char UWORLD_HOST[80];
+extern char UWORLD_SERVER[80];
+#endif
+
+#define UWORLD2 UWORLD2_NICK
+#ifdef UWORLD2
+#ifdef MAIN
+char UWORLD2_NICK[10] = "Uworld2";
+char UWORLD2_HOST[80] = "undernet.org";
+char UWORLD2_SERVER[80] = "Uworld2.undernet.org";
+#else
+extern char UWORLD2_NICK[10];
+extern char UWORLD2_HOST[80];
+extern char UWORLD2_SERVER[80];
+#endif
+#endif
+
+#ifdef BACKUP
+# define MAIN_NICK DEFAULT_NICKNAME
+# define MAIN_REALNAME ":X's backup: ^B/msg Q motd^B"
+# undef DEFAULT_NICKNAME
+# undef DEFAULT_REALNAME
+# define DEFAULT_NICKNAME "Q"
+# define DEFAULT_REALNAME ":X's backup: ^B/msg Q help^B"
+# define MAIN_SERVERNAME SERVERNAME
+# undef SERVERNAME
+# undef SERVERINFO
+# define SERVERNAME "channels2.undernet.org"
+# define SERVERINFO "Channel Service Backup"
+#endif
+
+
+#define UWORLD_COMMAND "reop %s"
+
+#define FAKE_UWORLD
+#ifdef FAKE_UWORLD
+# define UFAKE_NICK	UWORLD2
+# define UFAKE_HOST	DEFAULT_HOSTNAME
+# define UFAKE_SERVER	UWORLD2_SERVER
+# define UFAKE_INFO	"Uworld"
+#endif
+
+#define GETOPS_FREQ             600     /* seconds */
+#define GETOPS_ONJOIN_DELAY      30     /* seconds */
+
+#define MAX_IDLE_TIME		(48*3600) /* seconds */
+#define CHECK_IDLE_FREQ		(3 *3600) /* seconds */
+#define USERLIST_EXP_TIME	(90*24*3600) /* seconds (90 days) */
+#define RENAME_LOGFILE_FREQ	(3*24*3600) /* seconds (3 days) */
+
+#ifdef MAIN
+char CALMDOWNTOPIC[512] =
+  "This channel is in NoOp mode because of repeated abuse. Please contact "
+  "the channel manager to have this fixed. For more info, mail "
+  "cservice@undernet.org";
+#else
+extern char CALMDOWNTOPIC[512];
+#endif
+
+/* Define this if you want the 'upgrade' command
+ */
+#undef UPGRADE
+
+#ifdef UPGRADE
+#define PATCH_SERVER "apache.wildstar.net:7358"
+#define GETPATCHPASS "TEST"
+#define RECPATCHPASS "BLAH"
+#define MISC_TIMEOUT 60
+#define PATCH "/usr/bin/patch"
+#define MAKE "/usr/bin/make"
+#endif
+
+#define MAX_CONNECTIONS 50
+#define MAX_SENDQ 300000
+#define HIGHSENDQTHRESHOLD 10000
+/* Max Ban Duration in days. 
+ */
+#define MAX_BAN_DURATION 14
+
+/* Define this if you want the built-in http server
+ */
+#undef DOHTTP
+
+#ifdef DOHTTP
+#define HTTP_PORT 7357
+#define HTTP_TIMEOUT 60
+#define HTTP_LOG  "http.log"
+#define HTTP_DENY "http.deny"
+#define HTTP_REDIRECT "http://cservice.undernet.org/"
+#define HTTP_FOOTER "\n"\
+"<A HREF=\"http://cservice.undernet.org/\"><IMG SRC=\"/files/b_arrow.gif\">Back to main page</A><P>\n"\
+"This page is automatically generated by the Undernet Channel Service.\n"\
+"If you are experiencing any problem, please contact the \n"\
+"<A HREF=\"mailto:cservice@undernet.org\">Undernet Channel Service \n"\
+"Committee.</A><P>\n"\
+"This service is maintained by: <br>\n"\
+"<ADDRESS>Robin Thellend  <EM>(SeKs@IRC)</EM> &lt;\n"\
+"<A HREF=\"mailto:seks@alias.undernet.org\">seks@alias.undernet.org</A>\n"\
+"&gt;</ADDRESS>\n"
+
+#define HTTP_HEADER "<HEAD><TITLE>Undernet Channel Service: %s</TITLE></HEAD>\n"
+#define HTTP_BODY "<BODY BGCOLOR=#000000 TEXT=#FFFFFF LINK=#FF0000 VLINK=#FF00FF>\n"
+#define HTTP_BAN_DISCLAIMER "<EM>Disclaimer: The Undernet Channel Service\n" \
+          "Committee and the maintainer of this service in no way\n"         \
+          "support/endorse actions of channel operators, or regulate\n"      \
+          "channel content in any way. Channel bans shown in no way\n"       \
+          "reflect the views of the Channel Service Committee, and belong\n" \
+          "solely to the indvidual making them. No editorial control is\n"   \
+          "excised by the committee on either the channel or the webpage.\n" \
+          "</EM><P>\n"
+
+#define check_referer(x) (strncasecmp((x),"http://cservice.undernet.org/",28) \
+                && strncasecmp((x),"http://www.cservice.undernet.org/",28) \
+                && strncasecmp((x),"http://cservice.wildstar.net/",28))
+#ifdef check_referer
+#define HTTP_BAD_REFERER "http://cservice.undernet.org/bad_referer.html"
+#endif
+
+#endif
+
+

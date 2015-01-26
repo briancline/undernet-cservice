@@ -1,0 +1,30 @@
+This is the undernet channel service help package.
+
+To install it, execute this command in your home
+directory:
+     tar zxf Xhelp.tgz
+OR,  gzip -cd < Xhelp.tgz | tar xf
+
+Then, you only have to load the file ~/XHELP/Xscript
+in your IRC session. The easiest way to do it is to
+add it in your .ircrc with this command:
+
+    echo "//LOAD ~/XHELP/Xscript" >> ~/.ircrc
+
+Make sure you type both '>'. Otherwise, your .ircrc
+file will be lost.
+
+To install it for your whole system, uncompress the
+archive in your IRCLIB directory, edit the Xscript
+file so XHELP_DIR points to the correct directory and
+add the proper /LOAD in your script/local.
+
+This package is likely to require updates.
+The latest version of this package is always
+available from:
+  ftp://ca.undernet.org/pub/undernet/X/Xhelp.tgz
+
+-----
+Robin Thellend (SeKs@IRC)
+<intru@info.polymtl.ca>
+<seks@alias.undernet.org>

@@ -1,0 +1,7 @@
+SYNTAX: addchan [channel]
+        remchan [channel]
+
+addchan adds a channel to $NICK's auto-join list.
+
+remchan removes a channel from $NICK's auto-join list. The
+userlist for that channel remains unchanged.

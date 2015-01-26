@@ -1,0 +1,8 @@
+SYNTAX: join <channel>
+        part [channel]
+
+join is used to make $NICK join channel. Obviously, one
+must have access on that channel in order to do that.
+
+part makes $NICK leave the current channel (or channel if
+it is specified).

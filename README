@@ -1,0 +1,50 @@
+Undernet Channel Service (X)
+Copyright (C) 1995-2002 Robin Thellend
+
+This is the original Channel Service software that was used
+on Undernet from 1995 to 2001.
+
+For copying and licensing information, please see COPYING in
+this directory.
+
+This software is mostly obsolete now. It has been replaced
+by GNUworld/CMaster, which can be found at:
+  http://gnuworld.sourceforge.net/
+
+This software is unsupported, which means I have no intention
+of ever releasing a new version. It is provided mainly for
+educational and historical purposes.
+
+I used this code on many different platforms, including
+Solaris (sparc and x86), Linux, Freebsd, and OSF/1. As far as
+I know, it should still compile and run fine on any of them with
+a few minor adjustments.
+
+<ob-disclaimer>
+BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
+FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN
+OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
+PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED
+OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS
+TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE
+PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,
+REPAIR OR CORRECTION.
+</ob-disclaimer>
+
+To compile:
+  $ cp config.h.dist config.h
+  $ vi config.h  # set everything correctly
+  $ cp cs.conf.dist cs.conf
+  $ vi cs.conf   # set everything correctly
+  $ make
+
+To run:
+  $ ./cs -f cs.conf
+
+You can reach me at <csfeedback@robin.pfft.net> for questions or comments,
+but I reserve the right to completely ignore you if I feel like it.
+
+Enjoy!
+/Robin
+
