@@ -1,0 +1,4 @@
+SYNTAXE: showcommands [canal]
+
+showcommands vous donne la liste des toutes les commandes
+auxquelles vous avez accès.

@@ -1,0 +1,5 @@
+SYNTAXE: clearmode [canal]
+
+La commande clearmode enlève tous les modes d'un canal.
+Cette commande est utiles lorsqu'un canal est barré et qu'on
+ne peut plus y accéder.

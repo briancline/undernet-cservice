@@ -1,0 +1,36 @@
+SYNTAXE: set [canal] <attribut> <valeur>
+
+La commande set sert à configurer le comportement de $NICK
+dans différentes situations. Les attributs possibles sont les
+suivants:
+  MassDeopPro	NickFloodPro	FloodPro  UserFlags
+  NoOp		AlwaysOp	OpOnly    StrictOp
+  Description   URL		AutoTopic
+
+MassDeopPro est le nombre maximum de deops que quelqu'un
+peut faire avant d'activer la protection de MassDeop.
+NickFloodPro est le nombre maximum de changements de nick
+que quelqu'un peut faire avant d'activer la protection de
+NickFlood.
+FloodPro est le nombre maximum de lignes que quelqu'un peut
+envoyer sur un canal.
+NOTE: Si $NICK est +d (Deaf) le FloodPro ne fonctionne pas pour
+      les messages de canal.
+UserFlags représente les attributs donnés aux nouveaux
+enregistrement dans la liste des usagers.
+NoOp est un mode spécial où seul $NICK peut être op.
+AlwaysOp rend $NICK toujours op.
+OpOnly désactive toutes les commandes sauf op.
+StrictOp autorise seulement les usagers authentifiés à 
+être op.
+Description définit la description du canal.
+URL définit l'adresse de la page WEB du canal.
+AutoTopic remet le topic du canal à toutes les 30 minutes
+en se basant sur la description du canal.
+
+MassDeopPro, NickFloodPro et FloodPro prennent des valeurs
+entières et sont basés sur des périodes de 15 secondes.
+UserFlags peut être 1 (autoop) ou 0 (pas d'autoop).
+NoOp, AlwaysOp, OpOnly, StrictOp et AutoTopic prennent les
+valeurs ON ou OFF.
+Description et URL peuvent avoir jusqu'à 80 caractères.

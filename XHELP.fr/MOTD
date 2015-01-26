@@ -1,0 +1,3 @@
+SYNTAXE: motd
+
+Affiche le message du jour de $NICK.

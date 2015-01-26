@@ -1,0 +1,3 @@
+SYNTAXE: topic [canal] <nouveau topic>
+
+La commande topic change le topic sur un canal.

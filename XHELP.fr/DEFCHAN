@@ -1,0 +1,8 @@
+SYNTAXE: addchan [canal]
+         remchan [canal]
+
+La commande addchan ajoute un canal à la liste des canaux
+de $NICK.
+
+La commande remchan enlève un canal de la liste des canaux
+de $NICK, mais la liste des usagers reste inchangée.

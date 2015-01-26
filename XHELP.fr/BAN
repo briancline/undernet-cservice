@@ -1,0 +1,20 @@
+SYNTAXE: ban [canal] <nick|n!u@h> [durée] [niveau] [commentaire]
+         unban [canal] <nick|n!u@h>
+         cleanbanlist
+
+La commande ban ajoute une entrée dans la liste des bans. Si
+un canal est donné, il est utilisé au lieu du canal courant.
+Le paramètre durée détermine combien de temps le ban restera
+en place. niveau peut être une valeur entre 0 et votre niveau
+d'accès. Un commentaire peut aussi être donné.
+
+L'effet de cette commande depend du niveau donné:
+	  niveau	| effet                           
+	  >= 20		| usager ne peut plus être op
+	  >= 75		| usager ne peut plus être sur
+			| le canal.
+
+La commande unban enlève un ban.
+
+La commande cleanbanlist enlève tous les bans qui sont expirés.
+Cette tâche devrait être accomplie automatiquement.

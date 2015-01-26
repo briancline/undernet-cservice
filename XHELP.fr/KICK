@@ -1,0 +1,6 @@
+SYNTAXE: kick [canal] <nick> [raison]
+         kick [canal] <mask> [raison]    (Niveau 200)
+
+Cette commande kick nick ou tous les usagers correspondant
+à mask.  Si une raison est donnée, elle sera utilisée
+comme commentaire pour le kick.

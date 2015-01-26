@@ -1,0 +1,8 @@
+SYNTAXE: op [canal] <nick1> [nick2] [nick3] [...]
+         deop [canal] <nick1> [nick2] [nick3] [...]
+
+Les commandes op et deop donnent et enlèvent le
+privilège d'opérateur aux usagers donnés.
+
+Ces commandes sont désactivées en mode NoOp (Voir
+help set pour plus d'information).

@@ -1,0 +1,22 @@
+SYNTAXE: adduser [canal] <nick> [mask] <accès> [mot de passe]
+         modinfo [canal] <attribut> <nick> <nouvelle valeur>
+         remuser [canal] <nick>
+
+La commande adduser ajoute un enregistrement dans la liste des
+usagers avec un niveau accès et avec une adresse correspondant
+à mask.
+nick est utilisé seulement comme référence. Il est recommandé
+d'utiliser le nick le plus souvent utilisé pas l'usager. Si nick
+est présent lorsque la commande adduser est envoyée, mask
+n'est pas obligtoire. Il sera assigné automatiquement.
+Si un mot de passe n'est pas donné, l'usager devra utiliser la
+commande newpass pour en choisir un.
+L'attribut autoop prend la valeur par défaut pour le canal.
+
+modinfo sert à modifier un enregistrement dans la liste des
+usagers. attribut peut être MASK, ACCESS, AUTOOP ou REMPASS.
+nouvelle valeur doit être soit ON ou OFF pour l'attribut
+AUTOOP, or n'importe quelle valeur valide pour les autres (REMPASS
+ne prend aucun argument).
+
+remuser efface un enregistrement.

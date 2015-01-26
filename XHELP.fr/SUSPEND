@@ -1,0 +1,12 @@
+SYNTAXE: suspend [canal] <nick> <durée> [s|m|h|j]
+         unsuspend [canal] <nick>
+
+La commande suspend est utilisée pour suspendre l'accès
+d'un usager sur un canal pour une certaine durée. Les unités
+de temps disponibles sont secondes, minutes, heures et
+jours.
+
+Lorsqu'un usager est suspendu, il ne peut plus utiliser aucune
+commande qui demande un accès supérieur a zéro.
+
+La commande unsuspend enlève une suspension.

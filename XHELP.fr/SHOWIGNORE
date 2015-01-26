@@ -1,0 +1,4 @@
+SYNTAXE: showignore
+
+Donne la liste des usagers qui sont présentement ignorés
+par $NICK.

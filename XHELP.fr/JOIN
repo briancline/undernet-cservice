@@ -1,0 +1,8 @@
+SYNTAXE: join <canal>
+         part [canal]
+
+La commande join est utilisée pour faire entrer $NICK sur
+un canal. Bien sûr, vous devez avoir accès sur le canal
+pour utiliser cette commande.
+
+La commande part fait sortir $NICK d'un canal.

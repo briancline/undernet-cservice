@@ -1,0 +1,20 @@
+SYNTAXE: access [canal] [nick] [-min n] [-max n]
+                    [-autoop] [-noautoop]
+                    [-modif [mask]]
+
+La commande access affiche l'accès de nick (ou le votre, si
+nick n'est pas donné.  Les options suivantes peuvent être utilisées
+pour filtrer la liste:
+
+     -min n        Affiche seulement les usagers qui ont un accès
+                   supérieur ou égal à n.
+     -max n        Affiche seulement les usagers qui ont un accès
+                   supérieur ou égal à n.
+     -autoop       Affiche seulement ceux qui ont autoop actif.
+     -noautoop     Affiche seulement ceux qui n'ont pas autoop actif.
+     -modif [mask] Affiche qui a affectué la dernière modification sur
+                   les enregistrements.  Si un mask est donné, seuls
+                   les enregistrements modifiés par un usager correspondant
+                   au mask sont affichés.
+
+Les options peuvent être combinées. (-autoop -noautoop == Rien!)

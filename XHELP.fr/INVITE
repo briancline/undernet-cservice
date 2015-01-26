@@ -1,0 +1,5 @@
+SYNTAXE: invite [#canal] <nick>
+
+La commande invite demande à $NICK d'inviter nick sur
+votre canal.  Cette commande est utile lorsque le canal est
++i (invite-only).

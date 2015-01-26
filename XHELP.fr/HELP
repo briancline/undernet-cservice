@@ -1,0 +1,13 @@
+SYNTAXE: help <sujet>
+
+La commande affiche la page d'aide associée au sujet
+donné.  Utiliser la command showcommands pour obtenir
+la liste des commandes disponibles.
+
+Les commandes doivent être envoyées par MSG et si elles
+ont effet sur un canal en particulier, celui-ci doit être
+donné comme premier argument. Ex.:
+        /msg $NICK op #blah nick    donne le op à nick sur #blah
+ou      /msg $NICK op nick          si vous êtes sur #blah
+
+Pour plus d'information, essayez help info.
