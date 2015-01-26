@@ -302,3 +302,18 @@ extern char CALMDOWNTOPIC[512];
 #endif
 
 
+#undef NICKSERV
+
+#ifdef NICKSERV
+#ifdef MAIN
+char NSERV_NICK[10] = "NickServ";
+char NSERV_USER[10] = "nickserv";
+char NSERV_HOST[80] = "undernet.org";
+char NSERV_INFO[200] = "Nickname registration service";
+#else
+extern char NSERV_NICK[10];
+extern char NSERV_USER[10];
+extern char NSERV_HOST[80];
+extern char NSERV_INFO[200];
+#endif
+#endif

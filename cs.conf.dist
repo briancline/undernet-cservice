@@ -59,4 +59,11 @@ UWORLD2_SERVER Uworld2.undernet.org
 #
 CALMDOWNTOPIC CALMDOWN was used on this channel
 #
+#
+NSERV_STAT ON
+NSERV_NICK NickServ
+NSERV_USER nickserv
+NSERV_HOST undernet.org
+NSERV_INFO Nickname registration service
+#
 # End of configuration file
